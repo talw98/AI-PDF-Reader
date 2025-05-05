@@ -88,4 +88,4 @@ def chatbot(file, question):
     prompt = f""" Context information is below. {' '.join(retrieved_chunk)} Given the context information and not prior knowledge, answer the query. Query: {question} Answer: """
     return run_mistral(prompt)
 
-gr.Interface(fn=chatbot, inputs=["file", "text"], outputs= "text", title="DOORS-IA Assistant").launch()
+gr.Interface(fn=chatbot, inputs=["file", "text"], outputs= "text", title="AI PDF & Jupyter Notebook Assistant").launch()
